@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix</title>
+  </head>
+
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="./styles/netflix.css" />
+
+  <!-- google fonts  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- font awesome  -->
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+    crossorigin="anonymous"
+  />
+
+  <body>
+    <nav>
+      <div class="netflix-icon">
+        <a href="netflix.html"><img src="./images/netflix.png" alt="" /></a>
+      </div>
+      <div class="input-search">
+        <input
+          oninput="throttleFunction(main, 1000)"
+          type="text"
+          placeholder="Search for your movie"
+          id="movie_name"
+        />
+        <div>
+          <i class="fas fa-search"></i>
+        </div>
+      </div>
+      <div class="search-result"></div>
+    </nav>
+    <!-- top body slider  -->
+    <div class="main-slider">
+      <!-- <span><i class="fas fa-chevron-left"></i></span> -->
+      <div class="container">
+        <div class="series">
+          <i></i><span></span>
+          <div></div>
+        </div>
+      </div>
+      <!-- <span><i class="fas fa-chevron-right"></i></span> -->
+    </div>
+
+    <!-- trending movies collection  -->
+    <div class="trending-slider">
+      <div class="left1"><i class="fas fa-chevron-left"></i></div>
+      <div class="right1"><i class="fas fa-chevron-right"></i></div>
+      <div class="name">Trending of the Week</div>
+      <div class="trending-div"></div>
+    </div>
+
+    <!-- popular movies collection  -->
+    <div class="popular-slider">
+      <div class="left"><i class="fas fa-chevron-left"></i></div>
+      <div class="right"><i class="fas fa-chevron-right"></i></div>
+      <div class="name">Popular Movies Collection</div>
+      <div class="popular-div"></div>
+    </div>
+  </body>
+</html>
+<script src="./scripts/netflix.js"></script>
+
+<!-- 785de1daa82425f46bf058e1acf45ab0 - key  -->
+
+<!-- https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=785de1daa82425f46bf058e1acf45ab0 - api url -->
+
+<!-- eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3ODVkZTFkYWE4MjQyNWY0NmJmMDU4ZTFhY2Y0NWFiMCIsInN1YiI6IjYxYTM0YWY4MjQ5NWFiMDA2NTRjMDFlNyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.-0Th8uEWMu212mCJvkx9NSvPOundLNpEem_-4oBW2u0 -->

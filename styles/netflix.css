@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Martel Sans", sans-serif, "Poppins", sans-serif;
+}
+body {
+  background-color: #111;
+}
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 40px;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.netflix-icon {
+  height: 70%;
+  width: 60px;
+}
+.netflix-icon > a > img {
+  height: 100%;
+  width: auto;
+}
+.input-search {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  width: 75%;
+  height: fit-content;
+  justify-content: flex-end;
+}
+.input-search > input {
+  width: 30%;
+  height: 60px;
+  font-size: 18px;
+  color: white;
+  padding: 5px 20px;
+  padding-bottom: 2px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 1px solid white;
+  transition: all 0.2s ease-in-out;
+}
+.input-search > input:focus {
+  width: 45%;
+  border-bottom: 2px solid rgb(161, 5, 5);
+}
+.input-search > div {
+  height: 60px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input-search > div > i {
+  font-size: 25px;
+  color: white;
+}
+.input-search > div > i:hover {
+  color: rgb(161, 5, 5);
+}
+.search-result {
+  position: absolute;
+  top: 7vh;
+  right: 7.5%;
+  width: 31.5%;
+  height: fit-content;
+  background-color: #111;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  display: none;
+}
+.ptag {
+  padding: 10px;
+  box-sizing: border-box;
+  color: white;
+  background-color: #111;
+  box-shadow: rgba(0, 0, 0, 0.658) 0px 5px 15px 0px;
+  cursor: pointer;
+}
+.ptag:hover {
+  border-bottom: 2px solid rgb(161, 5, 5);
+}
+.main-slider {
+  position: relative;
+  top: 0px;
+  z-index: 1;
+  width: 100%;
+  height: 700px;
+  background-color: rgba(25, 24, 27, 0.7);
+}
+.main-slider > span {
+  position: absolute;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  background-image: url(https://i.pinimg.com/originals/3c/f4/cf/3cf4cf74674ede94488ee71d7ae04ade.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.popular-slider,
+.trending-slider {
+  position: relative;
+  width: 95%;
+  height: 450px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  overflow: hidden;
+}
+.left,
+.left1 {
+  position: absolute;
+  left: 0;
+  top: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(33, 33, 34, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  height: 350px;
+  z-index: 1;
+}
+.right,
+.right1 {
+  position: absolute;
+  right: 0;
+  top: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(33, 33, 34, 1) 100%
+  );
+  height: 350px;
+  z-index: 1;
+}
+.left > i,
+.right > i,
+.left1 > i,
+.right1 > i {
+  font-size: 30px;
+  color: white;
+}
+.name {
+  font-size: 35px;
+  color: white;
+  font-weight: 600;
+}
+.popular-div,
+.trending-div {
+  width: 340%;
+}
+.popular,
+.trend {
+  position: relative;
+  display: flex;
+  gap: 30px;
+  transition: right 0.3s ease-in-out;
+}
+.popular > div,
+.trend > div {
+  border-radius: 20px;
+  width: 300px;
+  position: relative;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: width 0.3s ease-in-out;
+  transition: height 0.3s ease-in-out;
+}
+.moviediv:hover {
+  width: 320px;
+  height: 370px;
+  border: 1px solid white;
+}
+.posterdiv,
+.posterdiv2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.posterdiv > img,
+.posterdiv2 > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.infodiv {
+  display: none;
+}
